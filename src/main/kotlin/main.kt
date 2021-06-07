@@ -7,4 +7,6 @@ fun main(args: Array<String>) {
     val array = Ej2(10){ Random.nextInt(50, 250)}
 
     array.array.forEach { println(it) }
+
+    val array2 = Ej3().filtro(Ej2(10, {Random.nextInt(50, 250)}).array)
 }
